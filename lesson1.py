@@ -3,6 +3,7 @@
 # запросите у пользователя несколько чисел и строк и сохраните в переменные, выведите на экран.
 print("\n***** Task 1 *****")
 
+print("\n> Let me play with some variables.")
 my_int = 11
 print("my_int =", my_int)
 
@@ -12,6 +13,7 @@ print("my_float =", my_float)
 my_str = "13"
 print("my_str =", my_str)
 
+print("\n> Let's calculate the sum of two numbers.")
 while True:
     first_number = input("Please, enter the first number: ")
     if first_number.isdigit():
@@ -39,6 +41,7 @@ print("So, {0}, that is the sum: {1} + {2} = {3}.".format(user_name, first_numbe
 # Используйте форматирование строк.
 print("\n***** Task 2 *****")
 
+print("\n> Let's convert a big number of seconds into a usual format.")
 while True:
     total_seconds = input("Please, enter the amount of seconds: ")
     if total_seconds.isdigit() and int(total_seconds) > 0:
@@ -50,7 +53,7 @@ while True:
 hours = total_seconds // 3600
 minutes = total_seconds // 60 - hours * 60
 seconds = total_seconds - hours * 3600 - minutes * 60
-print("{0} seconds = {1}:{2}:{3}.".format(total_seconds, hours, minutes, seconds))
+print("{0} seconds are equal to {1}:{2}:{3} (HH:MM:SS).".format(total_seconds, hours, minutes, seconds))
 
 # Task 3.
 # Узнайте у пользователя число n.
@@ -58,6 +61,7 @@ print("{0} seconds = {1}:{2}:{3}.".format(total_seconds, hours, minutes, seconds
 # Например, пользователь ввёл число 3. Считаем 3 + 33 + 333 = 369.
 print("\n***** Task 3 *****")
 
+print("\n> Let's calculate the sum of three funny numbers.")
 while True:
     first_number = input("Please, enter a number: ")
     if first_number.isdigit():
@@ -75,9 +79,10 @@ print("{0} + {1} + {2} = {3}".format(first_number, second_number, third_number, 
 # Для решения используйте цикл while и арифметические операции.
 print("\n***** Task 4 *****")
 
+print("\n> Let's find the biggest figure in your number.")
 while True:
-    user_int = input("Please, enter a number: ")
-    if user_int.isdigit() and int(user_int) > 0:
+    user_int = input("Please, enter a big number: ")
+    if user_int.isdigit() and int(user_int[0]) != 0:
         break
     else:
         print("Incorrect number. Please, try again.\n")
@@ -99,6 +104,7 @@ print("The biggest figure in number {0} is {1}.".format(user_int, the_biggest_fi
 # Далее запросите численность сотрудников фирмы и определите прибыль фирмы в расчете на одного сотрудника.
 print("\n***** Task 5 *****")
 
+print("\n> Let's calculate the profitability and the profit rate of you company.")
 while True:
     revenue = input("Enter the income of the company: ")
     if revenue.isdigit():
@@ -133,6 +139,7 @@ else:
 # Программа должна принимать значения параметров a и b и выводить одно натуральное число — номер дня.
 print("\n***** Task 6 *****")
 
+print("\n> Let's calculate the number of days needed to get you towards your goal.")
 while True:
     while True:
         initial_distance = input("Enter the initial distance you have run (km): ")
