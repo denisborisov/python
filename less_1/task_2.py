@@ -20,4 +20,4 @@ while True:
 hours = total_seconds // 3600
 minutes = total_seconds // 60 - hours * 60
 seconds = total_seconds - hours * 3600 - minutes * 60
-print(f"{total_seconds} seconds are equal to {hours}:{minutes}:{seconds} (HH:MM:SS).")
+print(f"{total_seconds} seconds are equal to {hours:>02}:{minutes:>02}:{seconds:>02} (HH:MM:SS).")
