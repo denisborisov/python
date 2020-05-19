@@ -38,4 +38,4 @@ day_number = 1
 while current_distance < target_distance:
     current_distance *= 1.1
     day_number += 1
-print("On day {0} the athlete achieved a result of at least {1} km.".format(day_number, target_distance))
+print(f"On day {day_number} the athlete achieved a result of at least {target_distance} km.")

@@ -37,4 +37,4 @@ while True:
 user_name = input("By the way, what is your name? ")
 
 sum = first_number + second_number
-print("So, {0}, that is the sum: {1} + {2} = {3}.".format(user_name, first_number, second_number, sum))
+print(f"So, {user_name}, that is the sum: {first_number} + {second_number} = {sum}.")

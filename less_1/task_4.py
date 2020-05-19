@@ -21,4 +21,4 @@ while counter < len(user_int):
     if the_biggest_figure < int(user_int[counter]):
         the_biggest_figure = int(user_int[counter])
     counter += 1
-print("The biggest figure in number {0} is {1}.".format(user_int, the_biggest_figure))
+print(f"The biggest figure in number {user_int} is {the_biggest_figure}.")

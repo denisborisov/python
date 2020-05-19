@@ -31,9 +31,9 @@ while True:
 if revenue > expenses:
     print("Income is greater than expenses.")
     profitability = (revenue - expenses) / revenue
-    print("The profitability is {0}.".format(profitability))
+    print(f"The profitability is {profitability:.2f}.")
     number_of_employees = int(input("Enter the number of employees: "))
     profit_per_employee = profitability / number_of_employees
-    print("The profit per employee is {0}.".format(profit_per_employee))
+    print(f"The profit per employee is {profit_per_employee:.2f}.")
 else:
     print("Expenses are greater than income.")

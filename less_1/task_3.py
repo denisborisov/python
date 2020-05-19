@@ -19,4 +19,4 @@ while True:
 second_number = first_number * 2
 third_number = first_number * 3
 sum = int(first_number) + int(second_number) + int(third_number)
-print("{0} + {1} + {2} = {3}".format(first_number, second_number, third_number, sum))
+print(f"{first_number} + {second_number} + {third_number} = {sum}")
