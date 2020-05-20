@@ -11,8 +11,8 @@ print("\n***** Task 4 *****")
 
 print("\n> Let's play with words.")
 
-user_string = input("Enter a string: ")
+string_of_words = input("Enter a string: ")
 
 print('The result of the processing is...')
-for i, word in enumerate(user_string.split()):
+for i, word in enumerate(string_of_words.split()):
     print(i+1, word[:10])
