@@ -9,10 +9,11 @@ Task 5.
 
 print("\n***** Task 5 *****")
 
+print("\n> Let's play with ratings.")
+
 rating_list = [7, 5, 3, 3, 2]
 print(f"The rating list is {rating_list} now.")
 
-print("\n> Let's play with ratings.")
 while True:
     rating = input("Please, enter the natural number (or q/Q if you want to stop): ")
     if rating in ['q', 'Q']:
