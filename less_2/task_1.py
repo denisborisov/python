@@ -9,7 +9,15 @@ Task 1.
 
 print("\n***** Task 1 *****")
 
-list_of_elements_of_various_data_types = [0, 3.1415926, "Denis Borisov", ("my", "tuple"), [1, 2, 3, 4, 5], {"a", "set"}, {"a" : "dictionary"}]
+list_of_elements_of_various_data_types = [
+    0,
+    3.1415926,
+    "Denis Borisov",
+    ("my", "tuple"),
+    [1, 2, 3, 4, 5],
+    {"a", "set"},
+    {"a" : "dictionary"}
+]
 
 for element in list_of_elements_of_various_data_types:
     if type(element) == dict:
