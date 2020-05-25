@@ -14,7 +14,7 @@ def get_two_numbers():
 
     () -> (whole number, whole number)
 
-    >>> get_user_numbers()
+    >>> get_two_numbers()
     (4, 2)
     """
 
