@@ -14,9 +14,6 @@ def get_three_numbers():
     """Returns three whole numbers entered by the user.
 
     () -> (whole number, whole number, whole number)
-
-    >>> get_three_numbers()
-    (-1, 2, 3)
     """
     while True:
         try:

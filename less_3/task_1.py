@@ -13,15 +13,10 @@ def get_two_numbers():
     """Returns two whole numbers entered by the user.
 
     () -> (whole number, whole number)
-
-    >>> get_two_numbers()
-    (4, 2)
     """
-
     while True:
-        num_1, num_2, *etc = input('\nPlease, enter two whole numbers separated by the space: ').split()
-
         try:
+            num_1, num_2, *etc = input('\nPlease, enter two whole numbers separated by the space: ').split()
             num_1, num_2 = int(num_1), int(num_2)
         except ValueError:
             print('Invalid numbers, please retry.')

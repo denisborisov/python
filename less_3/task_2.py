@@ -23,9 +23,6 @@ def get_user_birth_year():
     """Returns a year of birth entered by the user.
 
     () -> (whole number)
-
-    >>> get_user_birth_year()
-    1990
     """
     while True:
         try:
