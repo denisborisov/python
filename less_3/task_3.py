@@ -29,7 +29,7 @@ def get_three_numbers():
 def my_func(num_1, num_2, num_3):
     """Returns the max sum of two numbers among three ones.
 
-    (number, number, number) -> (number)
+    (number, number, number) -> number
 
     >>> my_func(-1, 2, 3)
     5

@@ -22,7 +22,7 @@ user_data_template = {'first_name': '',
 def get_user_birth_year():
     """Returns a year of birth entered by the user.
 
-    () -> (whole number)
+    () -> whole number
     """
     while True:
         try:
@@ -65,7 +65,7 @@ def get_user_data():
 def print_user_data(first_name, last_name, birth_year, city, email, phone):
     """Prints the user data in one line.
 
-    (string, string, number, string, string, string) -> (whole number)
+    (string, string, number, string, string, string) -> whole number
     """
     print(f'{first_name} {last_name} was born in {city} in {birth_year}.', end=' ')
     print(f'His e-mail address is {email} and phone number is {phone}.')

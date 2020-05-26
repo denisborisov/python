@@ -52,7 +52,7 @@ def get_two_numbers():
 def my_func_1(x, y):
     """Returns the result of pow(x, y).
 
-    (number, number) -> (number)
+    (number, number) -> number
     >>> my_func_1(2.0, -2)
     0.25
     """
@@ -61,7 +61,7 @@ def my_func_1(x, y):
 def my_func_2(x, y):
     """Returns the result of pow(x, y).
 
-    (number, number) -> (number)
+    (number, number) -> number
     >>> my_func_2(2, -2)
     0.25
     """
