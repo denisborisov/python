@@ -19,11 +19,8 @@ user_data_template = {'first_name': '',
                       }
 
 
-def get_user_birth_year():
-    """Returns a year of birth entered by the user.
-
-    () -> whole number
-    """
+def get_user_birth_year() -> int:
+    """Returns a year of birth entered by the user."""
     while True:
         try:
             birth_year = int(input('Please, enter your year of birth: '))
@@ -38,20 +35,8 @@ def get_user_birth_year():
         return birth_year
 
 
-def get_user_data():
-    """Returns a dictionary of user data.
-
-    () -> user_data_template
-
-    >>> get_user_data()
-    {'first_name': 'Denis',
-     'last_name': 'Borisov',
-     'birth_year': 1990,
-     'city': 'Moscow',
-     'email': 'd****.******v@h******.com',
-     'phone': '8***725****',
-    }
-    """
+def get_user_data() -> dict:
+    """Returns a dictionary of user data."""
     user_data = {}
     user_data['first_name'] = input('Enter your first name: ')
     user_data['last_name'] = input('Enter your last name: ')
@@ -62,13 +47,10 @@ def get_user_data():
     return user_data
 
 
-def print_user_data(first_name, last_name, birth_year, city, email, phone):
-    """Prints the user data in one line.
-
-    (string, string, number, string, string, string) -> whole number
-    """
-    print(f'{first_name} {last_name} was born in {city} in {birth_year}.', end=' ')
-    print(f'His e-mail address is {email} and phone number is {phone}.')
+def print_user_data(**kwargs):
+    """Prints the user data in one line."""
+    print(f"{kwargs['first_name']} {kwargs['last_name']} was born in {kwargs['city']}", end=' ')
+    print(f"in {kwargs['birth_year']}. His e-mail address is {kwargs['email']} and phone number is {kwargs['phone']}.")
 
 
 user_data = get_user_data()

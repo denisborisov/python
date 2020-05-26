@@ -25,11 +25,9 @@ def get_two_numbers():
         return num_1, num_2
 
 
-def division(dividend, divisor):
+def division(dividend: float, divisor: float) -> float:
     """Returns the result of division of two numbers.
     Returns 0 in case of divisor = 0.
-
-    (number, number) -> number
 
     >>> division(4, 2)
     2.0

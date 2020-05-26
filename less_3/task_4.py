@@ -49,19 +49,17 @@ def get_two_numbers():
     return x, y
 
 
-def my_func_1(x, y):
+def my_func_1(x: float, y: int) -> float:
     """Returns the result of pow(x, y).
 
-    (number, number) -> number
     >>> my_func_1(2.0, -2)
     0.25
     """
     return x**y
 
-def my_func_2(x, y):
+def my_func_2(x: float, y: int) -> float:
     """Returns the result of pow(x, y).
 
-    (number, number) -> number
     >>> my_func_2(2, -2)
     0.25
     """

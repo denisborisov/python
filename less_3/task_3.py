@@ -11,10 +11,7 @@ print("\n>Let's play with three numbers.")
 
 
 def get_three_numbers():
-    """Returns three whole numbers entered by the user.
-
-    () -> (whole number, whole number, whole number)
-    """
+    """Returns three whole numbers entered by the user."""
     while True:
         try:
             num_1, num_2, num_3, *etc = input('\nPlease, enter three whole numbers separated by the space: ').split()
@@ -26,22 +23,13 @@ def get_three_numbers():
         return num_1, num_2, num_3
 
 
-def my_func(num_1, num_2, num_3):
+def my_func(num_1: float, num_2: float, num_3: float) -> float:
     """Returns the max sum of two numbers among three ones.
-
-    (number, number, number) -> number
 
     >>> my_func(-1, 2, 3)
     5
     """
-    result = num_1 + num_2
-    if num_1 + num_3 > result:
-        result = num_1 + num_3
-
-    if num_2 + num_3 > result:
-        result = num_2 + num_3
-
-    return result
+    return max(num_1 + num_2, num_1 + num_3, num_2 + num_3)
 
 
 num_1, num_2, num_3 = get_three_numbers()

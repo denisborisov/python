@@ -13,7 +13,7 @@ print("\n***** Task 6 *****")
 print("\n>Let's play with sum.")
 
 
-def int_func(word):
+def int_func(word: str) -> str:
     """
     Returns a word with the first letter capitalized.
 

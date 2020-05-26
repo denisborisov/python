@@ -14,11 +14,10 @@ print("\n***** Task 5 *****")
 print("\n>Let's play with sum.")
 
 
-def my_sum(list_of_nums):
+def my_sum(list_of_nums: list) -> float:
     """Returns the sum of numbers from list_of_nums.
     Stop if non-number is trying to be processed.
 
-    list -> number
     >>> my_sum([2.0, -5, 'q', 3.14])
     -3.0
     """
