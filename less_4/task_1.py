@@ -18,7 +18,7 @@ try:
     _, hours, rate, bonus, *etc = sys.argv
     try:
         hours, rate, bonus = int(hours), int(rate), int(bonus)
-        print('Salary is ', calculate_salary(hours, rate, bonus))
+        print('Salary is', calculate_salary(hours, rate, bonus))
     except ValueError:
         print('Non a number entered, please retry.')
 
