@@ -9,17 +9,20 @@ Task 3.
 print("\n***** Task 3 *****")
 print("\n>Let's play with a file.")
 
-with open('employees.txt', 'r') as file:
-    count = 0
-    total_salary = 0
-    for line in file:
-        if line.isdigit():
-            salary = int(line)
-            total_salary += salary
-            if salary < 20000:
-                print(f'{surname} has salary less than 20.000.')
-        else:
-            surname = line[:-1]
-            count += 1
-    if count > 0:
-        print(f'The average salary is {total_salary/count}')
+try:
+    with open('employees.txt', 'r') as file:
+        count = 0
+        total_salary = 0
+        for line in file:
+            if line.isdigit():
+                salary = int(line)
+                total_salary += salary
+                if salary < 20000:
+                    print(f'{surname} has salary less than 20.000.')
+            else:
+                surname = line[:-1]
+                count += 1
+        if count > 0:
+            print(f'The average salary is {total_salary/count}')
+except FileNotFoundError:
+    print("File 'employees.txt' was not found.")
