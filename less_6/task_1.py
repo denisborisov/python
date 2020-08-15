@@ -19,7 +19,7 @@ print("\n>Let's play with a class.")
 import time
 
 class TrafficLight:
-    color = 'RED'
+    __color = 'RED'
 
     def running(self):
         self.light('RED', 7)
@@ -27,8 +27,8 @@ class TrafficLight:
         self.light('GREEN', 5)
 
     def light(self, color, color_time):
-        self.color = color
-        print(self.color, end=':\t')
+        self.__color = color
+        print(self.__color, end=':\t')
         t1 = time.time()
         seconds = 1
         while time.time() - t1 <= color_time:
