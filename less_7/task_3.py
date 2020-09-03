@@ -40,7 +40,7 @@ Task 3.
 '''
 
 print("\n***** Task 3 *****")
-print("\n>Let's play with cells.")
+print("\n>Let's play with random cells.")
 
 
 class Cell:
