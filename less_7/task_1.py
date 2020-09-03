@@ -42,6 +42,7 @@ class Matrix:
 
         if self.size != addend.size:
             print('You cannot sum matrices of different sizes!')
+            return
 
         c = Matrix()
         for i in range(len(self.size)):
@@ -73,6 +74,6 @@ if __name__ == "__main__":
 
     b = Matrix([[1, 2, 3],
                 [4, 5, 6],
-                [7, 8, 9]])
+                [7, 8]])
 
     print(a + b)
