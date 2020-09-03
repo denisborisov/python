@@ -23,6 +23,7 @@ class Clothes(ABC):
     def __init__(self, name):
         self.__name = name
 
+    @abstractmethod
     def fabric_consumption(self) -> float:
         pass
 
