@@ -8,7 +8,7 @@ Task 2.
 и не завершиться с ошибкой.
 '''
 
-print("\n***** Task 1 *****")
+print("\n***** Task 2 *****")
 print("\n>Let's play with exceptions.")
 
 
